@@ -1,0 +1,39 @@
+theme = "term-theme"
+
+[editor]
+# disables mouse
+mouse = false
+
+# left of editor
+gutters = ["line-numbers", "spacer"]
+
+# disable auto-add comment on newline
+continue-comments = false
+
+# wrap text when too long
+soft-wrap.enable = true
+
+[editor.cursor-shape]
+# insert cursor is different
+insert = "underline"
+
+[editor.statusline]
+left = ["mode", "file-name", "read-only-indicator", "file-modification-indicator"]
+
+[keys.normal]
+j = "move_char_left"
+k = "move_visual_line_down"
+l = "move_visual_line_up"
+";" = "move_char_right"
+
+[keys.insert]
+A-f = "normal_mode"
+
+[keys.select]
+# for some reason need to use 'extend' for visual
+j = "extend_char_left"
+k = "extend_visual_line_down"
+l = "extend_visual_line_up"
+";" = "extend_char_right"
+
+A-f = "normal_mode"
