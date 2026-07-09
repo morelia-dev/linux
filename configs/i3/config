@@ -224,7 +224,7 @@ gaps inner 8
 exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 # Display wallpaper on startup
-exec_always --no-startup-id feh --bg-scale /home/morelia/images/yosemite.jpeg
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/yosemite.jpeg
 
 exec_always --no-startup-id ~/.config/.screenlayout/normal.sh
 
