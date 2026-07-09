@@ -1,0 +1,36 @@
+{
+  "logo": {
+    "source": "~/.config/fastfetch/text/cat1",
+    "width": 10,
+    "height": 4,
+    "padding": {
+      "top": 7,
+      "left": 15,
+      "right": 16,
+    },
+  },
+  // "logo": "nixos",
+  // "logo": {
+  //   "source": "~/.config/fastfetch/text/cat2",
+  // },
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "break",
+    "os",
+    "kernel",
+    "wm",
+    "terminal",
+    "shell",
+    "packages",
+    "break",
+    "host",
+    "cpu",
+    "gpu",
+    "disk",
+    "display",
+    "break",
+    "colors",
+    "break"
+  ]
+}
