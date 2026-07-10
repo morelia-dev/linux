@@ -211,7 +211,7 @@ bindsym XF86MonBrightnessDown exec "brightnessctl set 5%-"
 bindsym XF86MonBrightnessUp exec "brightnessctl set +5%"
 
 # Take an interactive screenshot, then save to file system, then copy to clipboard
-bindsym $mod+Shift+s exec "scrot -s ~/screenshots/%Y-%m-%d_%H:%M:%S.png -e 'xclip -selection clipboard -t image/png -i $f'"
+bindsym $mod+Shift+s exec "scrot -s ~/screenshots/%Y-%m-%d-%H-%M-%S.png -e 'xclip -selection clipboard -t image/png -i $f'"
 
 # Window borders
 default_border pixel 0
@@ -222,6 +222,9 @@ gaps inner 8
 
 # Start compositor
 exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
+
+# Start XDG with i3
+exec_always --no-startup-id export XDG_CURRENT_DESKTOP=i3
 
 # Display wallpaper on startup
 exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/yosemite.jpeg
